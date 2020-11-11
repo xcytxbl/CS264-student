@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แสดงผลข้อมูลนักศึกษา</title>
+</head>
+<style>
+    body {
+  background-image: url("../image/background.PNG");
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  }
+</style>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;1,200&display=swap');
+</style>
+<body>
+   <table border="0" style="font-family: 'Kanit', sans-serif;">
+       <thead>
+            <th></th>
+            <th></th>
+            <th></th>
+       </thead>
+       <tbody>
+            <tr>
+                <td width="1200px">
+                    <span style="font-size: 32pt;">
+                        <img src="../image/tu_logo.png" alt="tu_logo"width="150px" height="150px" "><b>ระบบยื่นคำร้องขอลงทะเบียนล่าช้า</b>
+                    </span>
+                </td>
+                <td height="150px" width="200px">
+                    <span>
+                        <p style=" font-size: 16pt; color: black;">
+                            Firstname Lastname
+                        </p>
+                        <p style=" font-size: 16pt; color: black;">
+                            Role
+                        </p>
+                    </span>
+                    <span >
+                        <a href="../html/login.html" style="text-align: right;color: white;" >sign out</a>
+                    </span>
+                </td>
+                <td >
+                    <span>
+                        <img src="../image/icon.png" alt="user picture"width="120px" height="120px" align="right">
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3"> <!--แถวนี้ใช้ทำสองคอลัมน์ คือคอลัมน์ตัวเลือก กับคอลัมน์แสดงผล-->
+                    <table cellspacing ="10" cellpadding="10" border="0">
+                        <thead>
+                            <th>เมนู</th>
+                            <th></th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td width="200px">
+                                    <div style="align-self: auto;">
+                                        <table cellspacing ="10" cellpadding="10" >
+                                            <thead><th></th></thead>
+                                            <tbody align="top" width="20%"> <!--คอลัมน์สำหรับสร้างลิงต์เมนู-->
+                                                <tr>
+                                                    <div style="background-color:white; font-size: 16px;">
+                                                        <a href="#" style="color:black "><b>บันทึกข้อมูลนักศึกษา</b></a>
+                                                        <p></p>
+                                                    </div>
+                                                </tr>
+                                                <tr>
+                                                    <div style="background-color:white;">
+                                                        <a href="../html/display_student_detail.html" style="color:black"><b>แสดงผลข้อมูลนักศึกษา</b></a>
+                                                        <p></p>
+                                                    </div>
+                                                </tr>
+                                                <tr>
+                                                    <div style="background-color:white;" >
+                                                        <a href="#" style="color:black " ><b>พิจารณาการลงทะเบียนล่าช้า</b></a>
+                                                        <p></p>
+                                                    </div>
+                                                </tr>
+                                                <tr>
+                                                    <div style="background-color:white;" >
+                                                        <a href="#" style="color:black " ><b>ประกาศผลการลงทะเบียน</b></a>
+                                                        <p></p>
+                                                    </div>
+                                                </tr>
+                                            </tbody>
+                                    </div>
+                                    </table>
+                                </td>
+                                <td width="1300px" style="background:white;" align="middle"> <!--ใช้เกลี่ยนสีขาวเพื่อแสดงผลต่างๆ-->
+                                    <!--เขียนแสดงตัวเลือกแสดงผล ทั้งหดม/ผ่านการตรวจสอบ/ไม่ผ่านการตรวจสอบ-->
+                                    <label for="display_type"></label>
+                                    <input type="radio" name="displaytype" >นักศึกษาทั้งหมด
+                                    <input type="radio" name="displaytype" >นักศึกษาที่ผ่านการตรวจสอบเอกสาร
+                                    <input type="radio" name="displaytype" >นักศึกษาที่ไม่ผ่านการตรวจสอบเอกสาร
+                                    <table border="0" cellpadding="30" align="middle">
+                                        <thead>
+                                            <th>ลำดับที่</th>
+                                            <th>รหัสนักศึกษา</th>
+                                            <th>ชื่อ-นามสกุล</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr >
+                                                <td>1.</td>
+                                                <td>62XXXXXXXX</td>
+                                                <td>XXXXXXXXXX XXXXXXXXXX</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2.</td>
+                                                <td>62XXXXXXXX</td>
+                                                <td>XXXXXXXXXX XXXXXXXXXX</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3.</td>
+                                                <td>62XXXXXXXX</td>
+                                                <td>XXXXXXXXXX XXXXXXXXXX</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4.</td>
+                                                <td>62XXXXXXXX</td>
+                                                <td>XXXXXXXXXX XXXXXXXXXX</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5.</td>
+                                                <td>62XXXXXXXX</td>
+                                                <td>XXXXXXXXXX XXXXXXXXXX</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </td>
+            </tr>
+       </tbody>
+   </table>
+</body>
+</html>
