@@ -3,17 +3,13 @@ const path = require('path')
 const PORT = process.env.PORT || 5000
 const app = express();
 
-app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-app.use(express.static('./public'));
-
+app.set('views', path.join(__dirname, 'views'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.get('/main_menu',function (req, res) {
 res.render('pages/main_menu.ejs')
 });
-
-app.get('/main_menu', function (req, res,ejs) {
- res.sendFile(path.join('pages/main_menu.ejs'));
-});
+app.use(express.static(path.join(__dirname, 'public')));
 
 express()
   .use(express.static(path.join(__dirname, 'public')))
