@@ -7,8 +7,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use(express.static('./public'));
 
-app.get('/',function (req, res) {
-res.render('pages/index')
+app.get('/main_menu',function (req, res) {
+res.render('pages/main_menu.ejs')
 });
 
 app.get('/branch', function (req, res,html) {
