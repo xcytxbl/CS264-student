@@ -11,8 +11,8 @@ app.get('/main_menu',function (req, res) {
 res.render('pages/main_menu.ejs')
 });
 
-app.get('/branch', function (req, res,html) {
- res.sendFile(path.join(__dirname+'/branch.html'));
+app.get('/main_menu', function (req, res,ejs) {
+ res.sendFile(path.join('pages/main_menu.ejs'));
 });
 
 express()
