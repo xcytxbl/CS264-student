@@ -1,0 +1,113 @@
+html,
+
+    body {
+        background-color: rgb(255, 255, 255);
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #c91717;
+        padding: 5px;
+        text-align: left;
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+      }
+      nav {
+        -webkit-flex: 10;
+        -ms-flex: 0; 
+        flex: 1;
+        background: #ffcc33;
+        padding: 20px; 
+      }
+      section {
+        display: -webkit-flex;
+        display: flex;
+        background: #ffcc33;
+        color: #000000;
+        
+      }
+      
+      article {
+        -webkit-flex: 3;
+        -ms-flex: 3;
+        flex: 3;
+        background-color: #f1f1f1;
+        padding: 10px;
+      }
+    .box {
+        background-color: rgb(224, 17, 17);
+        padding: 20px;
+        margin: 0;
+        margin-bottom: 0px;
+    }
+    
+    .title {
+        font-size: 30px;
+        font-weight: 900;
+    }
+    
+    .text {
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(100, 98, 96);
+    }
+    
+    .text1 {
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+    }
+    
+    .text2 {
+        font-size: 10px;
+        color: rgb(0, 0, 0);
+    }
+    
+    .button {
+        color: white;
+        background-color: rgb(235, 225, 90);
+        padding: 10px;
+        text-decoration: none;
+        margin-bottom: 10px;
+        display: inline-block;
+        width: 70%;
+    }
+    
+    .button2 {
+        float: left;
+        margin-right: 60px;
+        color: rgb(0, 0, 0);
+    }
+    
+    button3 {
+        float: right;
+        margin-right: 60px;
+    }
+    
+    .image {
+        width: 80%;
+        margin-left: 5%;
+    }
+    
+    .image2 {
+        width: 7%;
+        float: right;
+    }
+    
+    .column {
+        float: left;
+        padding: 30px;
+        height: 100%;
+        width: 20%;
+    }
+    
+    login {
+        padding: 10px;
+        border: 1px solid #eeeeee;
+        background-color: #FAFFF5;
+    }
+    
+    .main-content {
+        max-width: 700px;
+        margin: auto;
+        float: center;
+    }
