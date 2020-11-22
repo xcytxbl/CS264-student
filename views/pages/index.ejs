@@ -1,226 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel='stylesheet' href='style.css'>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;500&display=swap" rel="stylesheet">
-    <title>ระบบยื่นคำร้องขอลงทะเบียนล่าช้า</title>
-    <style>
-        /* Internal CSS */
-        
-        body {
-            margin-left: 30;
-            font-family: 'Kanit', sans-serif;
-        }
-        
-        .container {
-            width: 100%;
-            margin: 0 auto;
-        }
-        
-        .container img {
-            margin-left: 50px;
-        }
-        
-        .menubar {
-            width: 100%;
-            height: 60px;
-        }
-        
-        .menubar ul.menu {
-            list-style: none;
-            float: right;
-        }
-        
-        .menubar ul.menu li {
-            float: right;
-            margin-top: 20px;
-            margin-right: 20px;
-        }
-        
-        .menubar ul.menu li a {
-            text-decoration: none;
-            color: #fff;
-            border-bottom: 2px solid transparent;
-            padding-bottom: 20px;
-            transition: all 0.3s ease;
-            margin-right: 30px;
-            text-align: center;
-        }
-        
-        .menubar ul.menu li a:hover {
-            border-bottom: 2px solid #fff;
-            padding-bottom: 0px;
-        }
-        
-        .menubar ui.menu img {
-            float: right;
-            margin-right: 50px;
-            margin-left: 50px;
-        }
-        
-        .header img {
-            margin: 0;
-            float: left;
-        }
-        
-        .header h1 {
-            text-align: center;
-            width: 680px;
-            padding: 70px;
-            font-size: 32px;
-            font-weight: 500px;
-        }
-        
-        .header form {
-            float: right;
-            margin: 0px;
-        }
-        
-        .header button {
-            padding: 3px;
-            width: 55px;
-            background: #333;
-            color: #fff;
-            border: 2px solid transparent;
-            text-transform: uppercase;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            font-size: 13px;
-            font-family: 'Kanit', sans-serif;
-        }
-        
-        .header button:hover {
-            background: #fff;
-            color: #333;
-            border: 2px solid #333;
-        }
-        
-        .wh {
-            margin: 0;
-            float: right;
-            width: 80%;
-            height: 540px;
-            background: #fff;
-        }
-        
-        .info {
-            width: 500px;
-            float: left;
-            font-size: 18px;
-            font-weight: 50px;
-            margin-left: 50px;
-        }
-        
-        .tab {
-            margin-top: 80px
-        }
-        
-        .tab button {
-            padding: 10px;
-            width: 270px;
-            background: #333;
-            color: #fff;
-            border: 2px solid transparent;
-            text-transform: uppercase;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            font-size: 16px;
-            font-family: 'Kanit', sans-serif;
-        }
-        
-        .tab button:hover {
-            background: #fff;
-            color: #333;
-            border: 2px solid #333;
-        }
-        
-        .button {
-            padding: 3px;
-            width: 55px;
-            background: #333;
-            color: #fff;
-            border: 2px solid transparent;
-            text-transform: uppercase;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            font-size: 13px;
-            font-family: 'Kanit', sans-serif;
-        }
-        
-        .button:hover {
-            background: #fff;
-            color: #333;
-            border: 2px solid #333;
-        }
-    </style>
+    <meta name="description" content="เว็บสำหรับลงทะเบียนล่าช้า">
+    <title>ระบบยื่นคำร้องขอลงทะเบียนล่าช้า</title> <!--Title บน Tab-->
 </head>
-
+<style>
+    body {
+  background-image: url("../image/background.PNG");
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;}
+</style>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+</style>
 <body>
-
-    <body background="images/bg.png" bgproperties="fixed"></body>
-    <div class="menubar">
-        <div class="container">
-            <ul class="menu">
-                <form action="">
-                    <input type="text" name="search">
-                    <button class="button">ค้นหา</button>
-                </form>
-                <p>
-                    <li><img src="images/profile.png" height="100" width="100"></li>
-                </p>
-                <p>
-                    <li>
-                        <a href="#">Log out</a>
-                    </li>
-                </p>
-
-
-
-            </ul>
-        </div>
-    </div>
-    <header class="header">
-        <div class="container">
-            <img src="images/thammasat.png" height="180" weight="180">
-            <h1>ระบบยื่นคำร้องขอลงทะเบียนล่าช้า</h1>
-
-        </div>
-    </header>
-    <section class="wh">
-        <div class="container">
-            <p> </p>
-            <div class="info">
-                <b>
-                    <h3>ประกาศเรื่อง</h3>
-                </b>
-                <p align="left">
-                    <u>- คำร้องขอลงทะเบียนล่าช้า</u>
-                </p>
-                <p align="left">เอกสารไม่ครบ กรุณาติดต่อภายในวันที่ XX เดือน XX ปี XXXX
-                </p>
-            </div>
-        </div>
-    </section>
-    <section class="tab">
-        <div class="container">
-            <form action="">
-                <button>หน้าหลัก</button><br>
-                <br>
-                <button>คำร้องขอลงทะเบียนล่าช้า</button><br>
-                <br>
-                <button>ผลการจดทะเบียนล่าช้า</button><br>
-                <br>
-                <button>คู่มือการจดทะเบียนล่าช้า</button><br>
-                <br>
-            </form>
-        </div>
-    </section>
-
+    <br><!--ขึ้นบรรทัด--> 
+    <h1 style="text-align:center; font-family: 'Prompt', sans-serif;" valign="top" >
+    <img src="../image/tu_logo.png" alt="logo"width="150px" height="150px" valign="middle"/> <!--ชื่อเรื่องหลัก-->
+     ระบบยื่นคำร้องขอลงทะเบียนล่าช้า</h1>
+    <table style="font-family: 'Prompt', sans-serif; background-color: white;" align="center" width="800px" height="300px" cellpadding="0">
+        <thead>
+            <th>                   </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <form style="font-family: 'Prompt', sans-serif; font-size: 20pt;" align = "center"  >
+                        <div>
+                            <label for="Username">Username:</label>
+                            <input type="text" name = "Username" placeholder="Student ID" required>
+                        </div>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form style="font-family: 'Prompt', sans-serif; font-size: 20pt;" align = "center"  >
+                        <div>
+                            <label for="Password">Password:</label>
+                            <input type="password" name = "Password" placeholder="Password" required >
+                        </div>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div align="middle">
+                        <a href="/main_menu">
+                            <input type="submit" value="Log in" style=" font-size: 22pt;font-family: 'Prompt', sans-serif;background-color: coral;" >
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </body>
-
 </html>
