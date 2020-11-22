@@ -190,7 +190,7 @@
 
 <body>
 
-    <body background="../images/bg.PNG" bgproperties="fixed"></body>
+    <body background="images/bg.png" bgproperties="fixed"></body>
     <div class="menubar">
         <div class="container">
             <ul class="menu">
@@ -203,7 +203,7 @@
                 </p>
                 <p>
                     <li>
-                        <a href="/">sign out</a>
+                        <a href="#">Log out</a>
                     </li>
                 </p>
 
@@ -214,7 +214,7 @@
     </div>
     <header class="header">
         <div class="container">
-            <img src="../images/thammasat.png" height="180" weight="180">
+            <img src="images/thammasat.png" height="180" weight="180">
             <h1>ระบบยื่นคำร้องขอลงทะเบียนล่าช้า</h1>
 
         </div>
@@ -424,16 +424,22 @@
     <section class="tab">
         <div class="container">
             <form action="">
-                <button>ข้อมูลรายชื่อนักศึกษาที่ยืนยันคำร้องการจดทะเบียนล่าช้า</button><br>
+                <button href="/main_menu"">หน้าแรก</button><br>
                 <br>
-                <button>การจดทะเบียนล่าช้า</button><br>
+                <button href="/fetch_student_data">ดึงข้อมูลนักศึกษา</button><br>
                 <br>
-                <button>การตรวจสอบข้อมูลเอกสาร</button><br>
+                <button href="/classify">แยกประเภทเเละบันทึกข้อมูลนักศึกษา</button><br>
                 <br>
-                <button>แยกประเภทนักศึกษาตามการตรวจสอบเอกสาร</button><br>
+                <button href="/display_student_detail">แสดงผลข้อมูลนักศึกษา</button><br>
                 <br>
-                <button>ส่งข้อมูลให้ฝ่ายวิชาการ</button><br>
+                <button href="/consider">พิจารณาการลงทะเบียนล่าช้า</button><br>
                 <br>
+					<button href="/pass_student_data">บันทึกผลการลงทะเบียน</button>
+					<br>
+						<br>
+							<button href="/notice_result">ประกาศผลการลงทะเบียน</button>
+							<br>
+								<br>
             </form>
         </div>
     </section>
